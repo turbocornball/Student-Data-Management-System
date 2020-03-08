@@ -1,4 +1,7 @@
-# Student Management System
+#simple student management system in python
+#crudel implementation
+#using csv file
+#https://github.com/turbocornball/Student-Data-Management-System.git
 
 import csv
 # Define global variables
@@ -17,7 +20,7 @@ def display_menu():
     print("5. Delete Student")
     print("6. Quit")
  
- 
+#function for adding data 
 def add_student():
     print("-------------------------")
     print("Add Student Information")
@@ -38,7 +41,7 @@ def add_student():
     input("Press any key to continue")
     return
  
- 
+#function for viewing the list of data
 def view_students():
     student_fields
     student_database
@@ -58,7 +61,7 @@ def view_students():
  
     input("Press any key to continue")
  
- 
+#function for searching data
 def search_student():
     student_fields
     student_database
@@ -74,13 +77,13 @@ def search_student():
                     print("ID_Number: ", row[0])
                     print("Name: ", row[1])
                     print("Year Level: ", row[2])
-                    print("Course: ", row[3]
+                    print("Course: ", row[3])
                     break
         else:
             print("ID No. not found in our database")
     input("Press any key to continue")
  
- 
+#function for data update
 def update_student():
     student_fields
     student_database
@@ -116,7 +119,7 @@ def update_student():
  
     input("Press any key to continue")
  
- 
+#function for deleting exisiting data
 def delete_student():
     student_fields
     student_database
@@ -145,7 +148,8 @@ def delete_student():
         print("ID No. not found in our database")
  
     input("Press any key to continue")
- 
+
+#loop for menu navigation
 while True:
     display_menu()
  
