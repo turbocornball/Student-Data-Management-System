@@ -8,3 +8,5 @@ The mini-project includes the following features:
 5. Delete Student
 
 The output of the program is:
+
+![Program Result](output.JPG)
